@@ -2,6 +2,7 @@ package Builder;
 
 import AbstractClass.*;
 
+//Abstract class EmployeeBuilder
 public interface EmployeeBuilder {
     EmployeeBuilder setId(int id); 
     EmployeeBuilder setName(String name);

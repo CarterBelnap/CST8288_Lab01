@@ -1,6 +1,7 @@
 package Builder;
 
 import AbstractClass.Employee;
+import Factory.PartTimeEmployee;
 
 public class PartTimeBuilder implements EmployeeBuilder {
 
@@ -49,7 +50,6 @@ public class PartTimeBuilder implements EmployeeBuilder {
 
 	@Override
 	public Employee build() {
-		// TODO Auto-generated method stub
-		return null;
+		return new PartTimeEmployee(Id, Name, Department, Role, HrsPerWeek, Salary);
 	}
 }

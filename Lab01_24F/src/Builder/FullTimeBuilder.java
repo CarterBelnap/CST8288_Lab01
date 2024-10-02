@@ -1,6 +1,7 @@
 package Builder;
 
 import AbstractClass.*;
+import Factory.FullTimeEmployee;
 
 public class FullTimeBuilder implements EmployeeBuilder {
 	
@@ -49,7 +50,7 @@ public class FullTimeBuilder implements EmployeeBuilder {
 
 	@Override
 	public Employee build() {
-		return null;
+		return new FullTimeEmployee(Id, Name, Department, Role, HrsPerWeek, Salary);
 	}
 
 }

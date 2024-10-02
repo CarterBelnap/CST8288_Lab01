@@ -10,13 +10,14 @@ public abstract class Employee {
 	double HrsPerWeek;
 	double Salary;
 	
+	//Basic Employee constructor
 	public Employee(int id, String name, String department, String role, double hrsPerWeek, double salary) {
 		this.id = id;
-		Name = name;
-		Department = department;
-		Role = role;
-		HrsPerWeek = hrsPerWeek;
-		Salary = salary;
+		this.Name = name;
+		this.Department = department;
+		this.Role = role;
+		this.HrsPerWeek = hrsPerWeek;
+		this.Salary = salary;
 	}
 
 	//Create basic abstract methods
